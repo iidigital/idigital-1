@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server"><!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>			
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<asp:ContentPlaceHolder Id="Head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+	<div class="wrapper">
+		<asp:ContentPlaceHolder Id="Main" runat="server"></asp:ContentPlaceHolder>
+	</div>
+
+	<script src="/scripts/plugins.js"></script>
+	<script src="/scripts/main.js"></script>
+
+	<asp:ContentPlaceHolder Id="Scripts" runat="server"></asp:ContentPlaceHolder>
+ </body>
+</html>
+</asp:Content>

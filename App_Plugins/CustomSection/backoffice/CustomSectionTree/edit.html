@@ -1,0 +1,31 @@
+<script>
+ 
+    function CustomSectionEditController($scope, $routeParams) {
+      //  $scope.content = { tabs: [{ id: 1, label: "Tab 1" }] };
+ 
+        $scope.EditMode = function() {
+            return $routeParams.create == 'true';
+        };
+    }
+</script>
+ 
+<div ng-controller="CustomSectionEditController">
+ 
+    <umb-panel>
+    <umb-header tabs="content.tabs">
+        <div class="umb-headline-editor-wrapper span12 ng-scope">
+            <h1 class="ng-binding">My custom section {{id}}</h1>
+               </div>
+    </umb-header>
+ 
+    <umb-tab-view>
+        <umb-tab id="tab1" rel="svensson">
+        <div class="umb-pane">
+           <iframe src="http://192.168.1.30:9998/home" width="100%" height="600" class="myiframe"></iframe>
+        </div>
+        </umb-tab>
+ 
+    </umb-tab-view>
+</umb-panel>
+ 
+</div>
