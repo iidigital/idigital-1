@@ -3,6 +3,6 @@
 </asp:Content>
 	
 <asp:Content ContentPlaceHolderId="Main" runat="server">
-<h1>Hello World!</h1>
+<h1>Hello World, from Github!</h1>
 <umbraco:Macro Alias="Home" runat="server"></umbraco:Macro>
 </asp:Content>
